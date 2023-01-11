@@ -1,4 +1,6 @@
 .container{
+    overflow: hidden;
+    
     
 }
 
@@ -10,20 +12,21 @@
 
 nav{
     width: 100%;
-    overflow: auto;
+    overflow: hidden;
     background-color: black;
     height: 100px;
+    
 
 }
 /* When we give list style-none to ul ,dotted points will be removed */
-ul{
+.k3{
     padding: 0;
     margin: 0 0 0 250px;
     list-style: none;
 }
 
 /* when we give text decoration-none underlined link will be gone */
-li a{
+.k1 .k2{
     width: 100px;
     height: 100px;
     display: block;
@@ -34,32 +37,35 @@ li a{
     font-size: 20px;
 }
 
-li{
+.k1{
     float: left;
 }
 
-li a:hover{
+.k1 .k2:hover{
     background-color: grey;
     text-transform: uppercase;
 }
 
-/* navbar button styling */
-.r1{
-    height: 40px;
-    width: 100px;
-    background-color: yellow;
-    color: black;
-    margin-left: 350px;
-    margin-top: 20px;
-}
-.r2{
-    height: 40px;
-    width: 100px;
-    background-color: green;
+.k4{
     color: whitesmoke;
-    position: absolute;right: 130px;
-    margin-top: 20px;
+    text-decoration: none;
+    font-size: 20px;
+    position: absolute;top: 40px;
+    margin-left: 100px;
+    border-right: 1px solid whitesmoke;
+    padding-right: 10px;
 }
+
+.k5{
+    color: whitesmoke;
+    text-decoration: none;
+    font-size: 20px;
+    position: absolute;top: 40px;
+    margin-left: 190px;
+    
+}
+
+
 
 
 
@@ -69,6 +75,7 @@ li a:hover{
 .w1{
     width: 100%;
     height: 600px;
+    overflow: hidden;
 }
 
 /* w2- homepage image */
@@ -85,14 +92,16 @@ li a:hover{
     color: rgb(235, 34, 34);
     font-size: 50px;
     position: absolute;
-    top: 200px;
+    top: 250px;
     font-weight: bold;
     margin-left: 40px;
 
 }
 
 
-
+.w3:hover{
+    color: yellow;
+}
 
 
 
@@ -104,14 +113,19 @@ li a:hover{
 /* a1- COMIC GEEK TITLE STYLING */
     .a1{
         text-align: center;
-        color:whitesmoke;
+        color:rgb(47, 40, 245);
         font-size: 80px;
         position: absolute; top: 50px;left: 550px;
     }
 
+    .a1:hover{
+         transform: scale(1.3);
+         z-index: 3;
+    }
+
     .a2{
-        background-color: rgb(21, 21, 68);
-        height: 2450px;
+        background: linear-gradient(to right, #00093c, #2d0b00);
+        height: 2950px;
         
 
     }
@@ -120,37 +134,27 @@ li a:hover{
     .a3{
         color: lightskyblue;
         text-align: center;
-        font-size: 50px;
+        font-size: 70px;
         font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        letter-spacing: 4px;
         cursor: pointer;
-        margin-top: 0;
+        margin-top: 90px;
+        position: absolute;left: 600px;
     }
 
-    .a3 :hover{
-        transform: translateY(-10);
+    .a3:hover{
+        transform: scale(1.3);
+        z-index: 3;
     }
 
-    .a4{
-        background-color: black;
-        color: orange;
-        width: 200px;
-        height: 50px;
-        border-radius: 45px;
-        font-size: larger;
-        position: ;
-    }
-
-    .a4 :hover{
-        transform: translateY(-10px);
-        
-    }
+    
     
     /* MARVEL ANIMATION ELEMENTS */
     .parent{
        width: 1600px;
-       height: 20px;
-       background-color; 
-       margin-top: 40px;
+       height: 20px; 
+       margin-top: 180px;
+       padding-top: 50px;
        position: relative;
     }
 
@@ -166,6 +170,7 @@ li a:hover{
         color: orange;
         text-align: end;
         position: absolute;left: 600px;top: 50px;
+        padding-top: 80px;
          
         
          
@@ -178,7 +183,6 @@ li a:hover{
     .row{
         width: 100%;
         height: 420px;
-        border: 5px solid red;
         margin-top: 200px;
         display: flex;
         justify-content:space-around;
@@ -189,8 +193,8 @@ li a:hover{
         height: 300px;
         width: 400px;
         margin-bottom: 180px;
-        border: 10px solid;
-        border-color: brown;
+        
+        
         
     }
 
@@ -206,6 +210,22 @@ li a:hover{
 
     }
 
+    
+    .comic-title{
+        color: whitesmoke;
+        padding: 10px 50px;
+        font-size: 20px;
+        font-weight: bold;
+        cursor: pointer;
+    }
+
+    .comic-title:hover{
+        color: yellow;
+    }
+
+
+
+
     /* DC CATEGORY TEXT STYLE - e2 */
 
     .q2{
@@ -216,26 +236,58 @@ li a:hover{
         position: absolute;left: 600px;top: 0px;
     }
 
-    .e1{
-        background-color: black;
-        color: orange;
-        height: 45px;
-        width: 200px;
+    .q3{
+        color: rgb(141, 56, 222);
+        font-size: 30px;
+        font-weight: bold;
+        text-align: end;
+        position: absolute;left: 600px;top: 0px;
     }
-    .e2{
-        background-color: yellow;
-        color: black;
-        height: 45px;
-        width: 100px;
+
+    .search-box{
+        position: absolute;
+        left: 50%;
+        bottom: -65px;
     }
+
+    .q4{
+        border: 4px solid rgb(7, 148, 7);
+        height: 40px;
+        width: 300px;
+        border-radius: 50px;
+        padding: 0px 10px;
+        background-color:rgb(7, 6, 6);
+        color: orangered;
+        font-size: 20px;
+        
+    }
+
+    .btn .fa-solid{
+        position: absolute;
+        left: 280px;
+        bottom: 15px;
+        border-radius: 50px;
+        width: 60px;
+        
+    }
+
+
+
+
+
+
+
+
+
+    
     form{
         position: absolute;left: 600px;top: 90px;
     }
 
     .middle{
-        height: 1500px;
+        height: 2000px;
         width: 100%;
-        background-color: rgb(140, 80, 98);
+        background:linear-gradient(to right,rgb(210, 68, 68) 0%, rgb(15, 15, 95)100%);
         margin-top: 0;
         position: relative;
     }
@@ -254,6 +306,7 @@ li a:hover{
     .t1:hover{
         transform: scale(1.3);
         z-index: 3;
+        color: rgb(235, 62, 50);
     }
 
     .t2{
@@ -335,4 +388,206 @@ li a:hover{
     .form-box{
         padding-top: 150px;
     }
+
+    .y1{
+        height: 400px;
+        position: absolute;top: 550px;
+    }
+    
+
+    /* y3 - Latest News styling */
+    
+    .y3{
+        font-size: 65px;
+        font-weight: bold;
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        color: rgb(207, 191, 9);
+        position: absolute;
+        margin-left: 605px;
+        margin-top: 180px;
+        letter-spacing: 3px;
+    }
+
+    .y3:hover{
+        transform: scale(1.3);
+        z-index: 3;
+    }
+
+    .news-box,.news-box2,.news-box3{
+        width: 50%;
+        height: 700px;
+        position: absolute;left:350px;
+        margin-top: 280px;
+        overflow: hidden;
+        border: 5px solid rgb(8, 6, 6);
+        
+    }
+
+    .y2{
+        width: 120%;
+        height: 700px;   
+    }
+
+    .text-box{
+        width: 500px;
+        position: absolute;
+        top: 400px;left: 100px;
+        color:rgb(207, 128, 75);
+        font-size: 35px;
+        font-weight: bold;
+        font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+
+    .news-box{
+        animation: slide1 10s linear infinite;
+    }
+
+    .news-box2{
+        animation: slide2 10s linear infinite;
+    }
+
+    .news-box3{
+        animation: slide3 10s linear infinite;
+    }
+
+    @keyframes slide1{
+        0%{
+            visibility: visible;
+        }
+        25%{
+            visibility: hidden;
+        }
+        50%{
+            visibility: hidden;
+        }
+        75%{
+            visibility: hidden;
+        }
+        100%{
+            visibility: visible;
+        }
+    }
+
+
+
+    @keyframes slide2{
+        0%{
+            visibility: hidden;
+        }
+        25%{
+            visibility: hidden;
+        }
+        50%{
+            visibility: visible;
+        }
+        75%{
+            visibility: hidden;
+        }
+        100%{
+            visibility: hidden;
+        }
+    }
+
+
+
+    @keyframes slide3{
+        0%{
+            visibility: hidden;
+        }
+        25%{
+            visibility: hidden;
+        }
+        50%{
+            visibility: hidden;
+        }
+        75%{
+            visibility: visible;
+        }
+        100%{
+            visibility: hidden;
+        }
+    }
+
+
+
+
+
+
+    .footer{
+        width: 100%;
+        height: 1500px;
+        position: absolute;
+        bottom: 0;
+        background-color: black;
+        color: whitesmoke;
+        padding: 100px 0 30px;
+        font-size: 13px;
+        line-height: 20px;
+    }
+
+    .row1{
+        width: 100%;
+        background-color: black;
+        height: 300px;
+        color: whitesmoke;
+        
+        margin: auto;
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+    }
+
+    .col{
+        padding: 10px;
+        flex-basis: 25%;
+    }
+    .col h3{
+        padding-left: 10px;
+        text-decoration: underline;
+        width: fit-content;
+    }
+    .col p{
+        line-height: 25px;
+        padding-left: 10px;
+    }
+
+    .col .p1{
+        margin-left: 80px;
+    
+    }
+    
+
+    ul li{
+        list-style: none;
+        margin-bottom: 12px;
+        margin-left: 55px;
+    }
+
+    ul li a{
+        text-decoration: none;
+        color: whitesmoke;
+    }
+
+    .email{
+        border-bottom: 1px solid red;
+        width: fit-content;
+    }
+    .col.p2{
+        line-height: 0px;
+    }
+
+    /* footer icon styling */
+
+    .icons .fa-brands{
+        height: 40px;
+        width: 80px;
+        line-height: 60px;
+        text-align: center;
+        border-radius: 50px;
+        cursor: pointer;
+        font-size: 45px;
+        
+    }
+
+    
 
