@@ -177,9 +177,7 @@ nav{
         text-align: end;
         position: absolute;left: 600px;top: 50px;
         padding-top: 80px;
-         
-        
-         
+            
     }
 
     .parent:hover .child{
@@ -446,15 +444,15 @@ nav{
     }
 
     .news-box{
-        animation: slide1 10s linear infinite;
+        animation: slide1 6s linear infinite;
     }
 
     .news-box2{
-        animation: slide2 10s linear infinite;
+        animation: slide2 6s linear infinite;
     }
 
     .news-box3{
-        animation: slide3 10s linear infinite;
+        animation: slide3 6s linear infinite;
     }
 
     @keyframes slide1{
